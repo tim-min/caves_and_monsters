@@ -268,13 +268,13 @@ class Enemy(pygame.sprite.Sprite):
         self.anim(x, y)
         return min((self.speed * x) // abs(x), x), min(self.speed * y // abs(y), y)
 
-    def draw(self, color_1='white', color_2='red'):
+    def draw(self, color_1='white', color_2='red',text_color='aquamarine2'):
         # pygame.draw.circle(self.screen, (255, 255, 255),
         #                    (self.rect.x + self.size[-2] // 2, self.rect.y + self.size[-1] // 2), self.len_attack, 1)
         pygame.draw.rect(self.screen, pygame.Color(color_1), [self.rect.x, self.rect.y - 20, 50, 10])
         pygame.draw.rect(self.screen, pygame.Color(color_2),
                          [self.rect.x, self.rect.y - 20, 50 * self.health // self.max_health, 10])
-        text = self.font.render(self.NAME, True, pygame.Color('white'))
+        text = self.font.render(self.NAME, True, pygame.Color(text_color))
         self.screen.blit(text, (self.rect.x + (self.rect.width - text.get_width()) // 2, self.rect.y - 40))
         if self.damage_string[0]:
             text = self.font.render(self.damage_string[0], True, pygame.Color('red'))
