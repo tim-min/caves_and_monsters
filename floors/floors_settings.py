@@ -2,12 +2,12 @@ from gui_elements import NPC
 
 
 floor1 = [{
-    "enemies": [[None], ['BOS_1'], ['Zombie', 'Archer'], ['Zombie', 'Archer', 'Goblin'], ['Zombie', 'Archer', 'Wolf'], ['Goblin', 'Archer', 'Wolf'], ['Archer'], ['Archer', 'Wolf'], ['BOS_1']],
+    "enemies": [[None], ['Zombie', 'Archer'], ['Zombie', 'Archer', 'Goblin'], ['Zombie', 'Archer', 'Wolf'], ['Goblin', 'Archer', 'Wolf'], ['Archer'], ['Archer', 'Wolf'], ['BOS_1']],
     "npc": [],
     "npc_coords": [],
     "map": "floors/floormap_0_0.txt",
     "waves": 8,
-    "enemies_max_count": [None, 1, 5, 6, 7, 8, 9, 10, 1],
+    "enemies_max_count": [None, 5, 6, 7, 8, 9, 10, 1],
     "spawn_ability": 1,
     "music": "sounds/rooms/0_0.mp3",
     "npc_spawn": 0,
